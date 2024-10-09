@@ -8,9 +8,9 @@ endif
 default: all
 
 .DEFAULT:
-	for dir in $(SUBDIRS); do $(MAKE) -C $$dir $@; done
+	for dir in $(SUBDIRS); do $(MAKE) $(MAKEFLAGS) -C $$dir $@; done
 
 install:
-	for dir in $(SUBDIRS); do $(MAKE) -C $$dir $@; done
+	for dir in $(SUBDIRS); do $(MAKE) $(MAKEFLAGS) -C $$dir $@; done
 
 .PHONY: install

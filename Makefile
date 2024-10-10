@@ -12,5 +12,6 @@ default: all
 
 install:
 	for dir in $(SUBDIRS); do $(MAKE) INSTALL_PREFIX=$(DESTDIR) -C $$dir $@; done
-
+	mkdir -p debian/tmp/usr/local/bin
+    cp -ra /usr/local/bin/* debian/tmp/usr/local/bin
 .PHONY: install

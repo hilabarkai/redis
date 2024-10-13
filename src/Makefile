@@ -69,7 +69,6 @@ INSTALL_BIN=$(PREFIX)/bin
 INSTALL=install
 PKG_CONFIG?=pkg-config
 
-@echo $(PREFIX)
 
 ifndef PYTHON
 PYTHON := $(shell which python3 || which python)

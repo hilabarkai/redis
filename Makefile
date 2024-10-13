@@ -11,9 +11,9 @@ default: all
 	for dir in $(SUBDIRS); do $(MAKE) -C $$dir $@; done
 
 install:
-    @echo "Installing ..."
+    echo "Installing ..."
 	for dir in $(SUBDIRS); do $(MAKE) PREFIX=$(DESTDIR) -C $$dir $@; done
-	@echo "Installation complete."
-    @find / -name "redis-*" -print
+	echo "Installation complete."
+    find / -name "redis-*" -print
 
 .PHONY: install

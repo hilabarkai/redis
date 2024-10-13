@@ -1,5 +1,5 @@
 PREFIX ?= /usr/local
-INSTALL_DIR ?= $(DESTDIR)$(PREFIX)/lib/redis/modules
+INSTALL_DIR ?= $(PREFIX)/lib/redis/modules
 INSTALL ?= install
 
 # This logic *partially* follows the current module build system. It is a bit awkward and

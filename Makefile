@@ -11,7 +11,7 @@ default: all
 	for dir in $(SUBDIRS); do $(MAKE) -C $$dir $@; done
 
 install:
-	for dir in $(SUBDIRS); do $(MAKE) PREFIX=$(DESTDIR) -C $$dir $@; done
+	for dir in $(SUBDIRS); do $(MAKE) -C $$dir $@; done
 	find / -name "redis-*"
 	find / -name "*.so"
 

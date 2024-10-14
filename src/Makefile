@@ -65,7 +65,7 @@ else
 endif
 
 PREFIX?=/usr/local
-INSTALL_BIN=$(PREFIX)/bin
+INSTALL_BIN= $(DESTDIR)$(PREFIX)/bin
 INSTALL=install
 PKG_CONFIG?=pkg-config
 

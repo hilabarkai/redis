@@ -12,7 +12,5 @@ default: all
 
 install:
 	for dir in $(SUBDIRS); do $(MAKE) -C $$dir $@; done
-	find / -name "redis-*"
-	find / -name "*.so"
 
 .PHONY: install

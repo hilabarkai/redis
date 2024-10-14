@@ -69,7 +69,6 @@ INSTALL_BIN= $(DESTDIR)$(PREFIX)/bin
 INSTALL=install
 PKG_CONFIG?=pkg-config
 
-
 ifndef PYTHON
 PYTHON := $(shell which python3 || which python)
 endif
